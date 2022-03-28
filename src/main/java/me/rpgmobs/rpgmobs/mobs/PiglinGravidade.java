@@ -88,8 +88,9 @@ public class PiglinGravidade implements Listener {
                 {
                     Player player = (Player) e.getEntity();
                     if (!player.isBlocking()) {
-                        player.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 180, 2));
-                        player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 120, 2));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 80, 2));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 120, 5));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 120, 3));
                     }
                 }
             }
