@@ -17,7 +17,7 @@ Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483
 
 **LEMBRE-SE:** Este é um **mod**. Este não é o jogo vanilla e deve ser tratado como uma **modificação**. Isso não é e provavelmente nunca será oficial, então não se confunda.
 
-# Prévias ([skip](#novidades))
+# Prévias ([pular](#novidades))
 
 <p align="center">
       <img src="https://media.discordapp.net/attachments/914701653549133904/921595482101407774/unknown.png" width="350">
@@ -41,7 +41,25 @@ Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483
       - A Questão de ter a presença de novos monstros ainda pode ser novidade para alguns. Mas agora podemos enfrentar outros tipos de inimigos, infelizmente não podemos criar novos tipos de raça sem transformar o plugin em um mod. Mas estou me esforçando ao máximo para trazer uma possível variedade de monstros.
 
 
-# Creditos
+# Recursos Exclusivos do Servidor Anrient
 
-- [KiritoDZN](https://twitter.com/kirito_dzn)
-- [zHeroDZN]()
+- **Texturas Exclusivas**
+     - Diferente da versão que é liberada no Spigot, a versão exclusiva para o servidor conta com pacote de recursos para as armas e acessórios.
+- **Armas Exclusivas**
+     - A Versão do servidor do Anrient sempre será a mais atualizada, podendo até mesmo conter mais armas e monstros. Então a versão do servidor sempre terá uma quantidade absurda de armas comparado ao que é liberado gratuitamente.
+- **Voz do Vazio**
+     - A Voz do Vazio é uma entidade que conversa com você para que não se sinta solitário, ainda não é uma ideia que esta sendo completamente implementada... mas estamos nos esforçando para a ideia da implementação do mesmo.
+- **Novos Sons/Músicas**
+     - A Temática do Servidor de Anrient se passa em um mundo RPG, então por que não adicionar tais sons para ambientar melhor esse incrível mundo ?
+
+# Creditos [ Plugin ]
+
+- [KiritoDZN](https://twitter.com/kirito_dzn) Desenvolvedor do Plugin
+- [zHeroDZN](https://twitter.com/zHeslley) Colaborador
+
+# Creditos [ Servidor ]
+
+- [KiritoDZN](https://twitter.com/kirito_dzn) Dono e Programador
+- [zHeroDZN](https://twitter.com/zHeslley) Programador
+- [Bieu] - Discord ".BieÜ#4191" Ajudante
+- [Gerson] - Discord "Gerson Pau pra toda Obra#4832" Ajudante
