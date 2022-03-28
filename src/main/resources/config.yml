@@ -13,21 +13,21 @@
 
 #Chance de spawnar do Ceifador (1 é o mínimo, 100 é o máximo)
 #Defina como 0 se você não quiser que os ceifadores se reproduzam
-Reaper Spawn Chance: 20
+Reaper Spawn Chance: 15
 
 #Chance de spawn do Esqueleto Guerreiro (1 é o mínimo, 100 é o máximo)
 #Defina como 0 se você não quiser que os cavaleiros sem cabeça se reproduzam
-Warrior Spawn Chance: 40
+Warrior Spawn Chance: 20
 
 #Chance de spawn do Necromantes (1 é o mínimo, 100 é o máximo)
 #Defina como 0 se você não quiser que os necromantes se reproduzam
-Necromancer Spawn Chance: 8
+Necromancer Spawn Chance: 9
 
 #Chance de spawn do Zumbi Minerador (1 é o mínimo, 100 é o máximo)
 #Defina como 0 se você não quiser que os miners se reproduzam
-Miner Spawn Chance: 20
+Miner Spawn Chance: 25
 
 
-Piglin Gravidade Spawn Chance: 20
+Piglin Gravitacional Spawn Chance: 20
 
-Piglin Brutal Spawn Chance: 20
+Piglin Guerreiro Spawn Chance: 20

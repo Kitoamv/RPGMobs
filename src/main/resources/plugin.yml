@@ -1,0 +1,16 @@
+name: RPGMobs
+version: '${project.version}'
+main: me.rpgmobs.rpgmobs.RPGMobs
+api-version: 1.17
+prefix: RPGMobs
+load: STARTUP
+authors: [ KiritoDzn ]
+description: Adiciona a chance de spawnar novos Mobs ao survival!
+website: www.youtube.com/KiritoAmvs
+commands:
+  givemwand:
+    description: Adquira o Cajado da Megumin!
+    usage: /givemwand
+  giveminer:
+    description: Adquira um Capacete de Minerador!
+    usage: /giveminer

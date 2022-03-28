@@ -28,7 +28,7 @@ public final class RPGMobs extends JavaPlugin {
 
     // Textos Para o Console do Plugin
     public static Plugin plugin;
-    public final String pluginVer = "&6&l1.0.1"
+    public final String pluginVer = "&6&l1.0.1";
     public final String system = Bukkit.getServer().getName();
     public final String collaborators = "&a&lzHeroDZN";
     public final String author = "&d&lKirito&5&lDzn";
@@ -91,7 +91,7 @@ public final class RPGMobs extends JavaPlugin {
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cNome do Plugin: " + prefix );
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cDesenvolvedor: " + author);
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cColaboradores: " + collaborators);
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&7Version: &b " + pluginVer + "&7 &e" + system);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cVersion: &b " + pluginVer + "&7 &e" + system);
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cSuporte: ");
@@ -183,19 +183,6 @@ public final class RPGMobs extends JavaPlugin {
         config = new YamlConfiguration();
         try {
             config.load(configf);
-        } catch (IOException | InvalidConfigurationException e) {
-            e.printStackTrace();
-        }
-
-        itemsf = new File(getDataFolder(), "items.yml");
-
-        if (!(itemsf.exists())) {
-            itemsf.getParentFile().mkdir();
-            saveResource("items.yml", false);
-        }
-        items = new YamlConfiguration();
-        try {
-            items.load(itemsf);
         } catch (IOException | InvalidConfigurationException e) {
             e.printStackTrace();
         }

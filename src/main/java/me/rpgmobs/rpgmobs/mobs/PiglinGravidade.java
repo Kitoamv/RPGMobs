@@ -9,13 +9,11 @@ import org.bukkit.World;
 import org.bukkit.attribute.Attributable;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeInstance;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Piglin;
-import org.bukkit.entity.Player;
+import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -81,16 +79,20 @@ public class PiglinGravidade implements Listener {
 
     @EventHandler
     public void onEntityDamage(EntityDamageByEntityEvent e) {
-            if(e.getCause() != DamageCause.PROJECTILE && !(e.getEntity() instanceof Player) && !(e.getDamager() instanceof Arrow)) return;
-                Arrow a = (Arrow) e.getDamager();
-                    if(!(a.getShooter() instanceof Piglin)) return; //MALDITOS ESQUELETOS.
-                    if (a.getShooter().getCustomName() != null && a.getShooter().getCustomName().equals(ChatColor.RED + "Piglin Gravitacional")) {
+        if (e.getCause() != EntityDamageEvent.DamageCause.PROJECTILE && !(e.getEntity() instanceof Player) && !(e.getDamager() instanceof Arrow))
+            return;
+        Arrow a = (Arrow) e.getDamager();
+        if (a.getShooter() instanceof Piglin) { //MALDITOS ESQUELETOS.
+            Piglin piglin = (Piglin) a.getShooter();
+            if (((Piglin) a.getShooter()).getCustomName() != null && ((Piglin) a.getShooter()).getCustomName().equals(ChatColor.RED + "Piglin Gravitacional")) {
+                {
                     Player player = (Player) e.getEntity();
                     if (!player.isBlocking()) {
-                        player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 180, 2));
-                        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 180, 2));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 180, 2));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 120, 2));
                     }
                 }
             }
         }
     }
+}

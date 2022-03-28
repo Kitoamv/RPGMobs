@@ -1,0 +1,16 @@
+ErrorMessages:
+  "AdminOnly": "&cVocê não tem permissão para usar este comando!"
+  "NEArgs": "&cVocê não utilizou os argumentos."
+  "LocaleNoExist": "&4Localização não existe."
+
+SucessMessages:
+  "LocaleSet": "&aA Localização foi definida"
+
+Mobs:
+  "Reaper": "&4Ceifador de Almas"
+
+Mobs Drops:
+  "ReaperHead": "&9&nCabeça do Ceifeiro"
+
+Itens:
+  "Espada-Esmeralda": "&aEspada de Esmeralda"

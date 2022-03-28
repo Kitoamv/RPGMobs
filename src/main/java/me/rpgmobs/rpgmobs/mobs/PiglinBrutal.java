@@ -41,7 +41,7 @@ public class PiglinBrutal implements Listener {
                 guerreiro.setCustomName(ChatColor.DARK_RED + "Piglin Guerreiro");
                 guerreiro.setCustomNameVisible(true);
                 Attributable piglinguerreiro = guerreiro;
-                AttributeInstance attributeHealth = necro.getAttribute(Attribute.GENERIC_MAX_HEALTH);
+                AttributeInstance attributeHealth = piglinguerreiro.getAttribute(Attribute.GENERIC_MAX_HEALTH);
                 attributeHealth.setBaseValue(40);
                 guerreiro.setHealth(40);
 
