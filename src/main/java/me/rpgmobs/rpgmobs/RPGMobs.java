@@ -127,11 +127,11 @@ public final class RPGMobs extends JavaPlugin {
     public final int WarriorSpawnChance = getConfig().getInt("Warrior Spawn Chance");
     public final int NecromancerSpawnChance = getConfig().getInt("Necromancer Spawn Chance");
     public final int MinerSpawnChance = getConfig().getInt("Miner Spawn Chance");
-    public final int GravidadeSpawnChance = getConfig().getInt("Piglin Gravidade Spawn Chance");
+    public final int GravidadeSpawnChance = getConfig().getInt("Piglin Gravitacional Spawn Chance");
     public final int PiglinBrutalSpawnChance = getConfig().getInt("Piglin Guerreiro Spawn Chance");
 
     // PACOTE DE RECURSOS
-    public final int ResourcePackLink = getConfig().getInt("ResourcePack Link");
+    public final int ResourcePackLink = getConfig().getInt("Resourcepack Link");
 
     @Override
     public void onDisable() {
