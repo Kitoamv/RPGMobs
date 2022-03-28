@@ -19,6 +19,10 @@ Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483
 
 # Prévias ([skip](#novidades))
 
+![Espadas Finas](https://media.discordapp.net/attachments/914701653549133904/921595482101407774/unknown.png)
+![Espada Longa](https://media.discordapp.net/attachments/914701653549133904/921765951333093466/unknown.png)
+![Pepita de Magma](https://media.discordapp.net/attachments/914701653549133904/921902065234624572/unknown.png)
+![Crafting Espada Fina](https://media.discordapp.net/attachments/914701653549133904/921573755849936936/unknown.png)
 
 # Novidades
 
