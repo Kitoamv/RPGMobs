@@ -30,8 +30,8 @@ public final class RPGMobs extends JavaPlugin {
     public static Plugin plugin;
     public final String pluginVer = this.getDescription().getVersion();
     public final String system = Bukkit.getServer().getName();
-    public final String collaborators = "";
-    public final String author = "&d&lKiritoDzn";
+    public final String collaborators = "&a&lzHeroDZN";
+    public final String author = "&d&lKirito&5&lDzn";
     public final String prefix = me.rpgmobs.rpgmobs.Utils.chat.translated("&4&lRPG &c&lMobs ");
 
     public static RPGMobs instance;
