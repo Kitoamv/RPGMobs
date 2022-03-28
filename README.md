@@ -13,7 +13,7 @@ Links: **[Minecraft.Net](https://minecraft.net) [Spigot](https://www.spigotmc.or
 ## RPG Mobs
 **RPG Mobs** é um plugin usado normalmente em Spigot ou CraftBukkit, podendo adicionar um conteúdo extra para o jogo.
 
-Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483/) [Última Versão](https://github.com/Kitoamv/RPGMobs/releases/latest) [Discussões](https://github.com/Kitoamv/RPGMobs/discussions)
+Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483/)  [Última Versão](https://github.com/Kitoamv/RPGMobs/releases/latest)  [Discussões](https://github.com/Kitoamv/RPGMobs/discussions)**
 
 **LEMBRE-SE:** Este é um **mod**. Este não é o jogo vanilla e deve ser tratado como uma **modificação**. Isso não é e provavelmente nunca será oficial, então não se confunda.
 
