@@ -11,7 +11,7 @@ public class Comandos implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         if(!(sender instanceof Player)){
-            sender.sendMessage("Apenas Jogadores podem usar este comando.");
+            sender.sendMessage("&c&lApenas Jogadores podem usar este comando.");
             return true;
         }
         else{
@@ -25,7 +25,7 @@ public class Comandos implements CommandExecutor {
                 }
             }
             else{
-                sender.sendMessage("Você não tem permissão para usar este comando.");
+                sender.sendMessage("&4&lVocê não tem permissão para usar este comando.");
             }
             return true;
         }
