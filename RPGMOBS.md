@@ -10,6 +10,14 @@ Apenas Leve em Consideração que o Perigoso esta eminente.
 
 
 
+
+
+
+
+
+
+
+
 Para Conseguir Programar Este Plugin será necessário ter a API do Minecraft e também do JDK 16
 O Lnk de Download do JDK Estará sendo Liberado em Breve.
 
