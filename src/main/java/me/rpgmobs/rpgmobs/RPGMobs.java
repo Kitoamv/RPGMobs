@@ -28,7 +28,7 @@ public final class RPGMobs extends JavaPlugin {
 
     // Textos Para o Console do Plugin
     public static Plugin plugin;
-    public final String pluginVer = this.getDescription().getVersion();
+    public final String pluginVer = "&6&l1.0.1"
     public final String system = Bukkit.getServer().getName();
     public final String collaborators = "&a&lzHeroDZN";
     public final String author = "&d&lKirito&5&lDzn";
