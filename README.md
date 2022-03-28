@@ -18,3 +18,9 @@ Para Conseguir Programar Este Plugin será necessário ter a API do Minecraft e 
 O Lnk de Download do JDK Estará sendo Liberado em Breve.
 
 Estou Programando o Plugin pelo IntelliJ IDEA Community Edition 2021.3
+
+
+
+
+
+Este Plugin Esta Sendo Feito Pelo KiritoDzn
