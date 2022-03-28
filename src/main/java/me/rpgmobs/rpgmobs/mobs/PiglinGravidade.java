@@ -80,7 +80,7 @@ public class PiglinGravidade implements Listener {
 
 
     @EventHandler
-    public void onEntityDamage(EntityDamageByEntityEvent event) {
+    public void onEntityDamage(EntityDamageByEntityEvent e) {
             if(e.getCause() != DamageCause.PROJECTILE && !(e.getEntity() instanceof Player) && !(e.getDamager() instanceof Arrow)) return;
                 Arrow a = (Arrow) e.getDamager();
                     if(!(a.getShooter() instanceof Piglin)) return; //MALDITOS ESQUELETOS.
