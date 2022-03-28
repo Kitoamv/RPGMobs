@@ -30,7 +30,7 @@ Links: **[Plugin Spigot](https://www.spigotmc.org/resources/rpg-mobs-items.98483
 - **Novos Recursos**
       - Agora é possível criar novos tipos de minérios como Barra de Magma, Obsidian e entre outros.
       - Também é possível criar espadas utilizando Ametista, Cobre e até mesmo Esmeralda.
-- **Nobos Monstros**
+- **Novos Monstros**
       - A Questão de ter a presença de novos monstros ainda pode ser novidade para alguns. Mas agora podemos enfrentar outros tipos de inimigos, infelizmente não podemos criar novos tipos de raça sem transformar o plugin em um mod. Mas estou me esforçando ao máximo para trazer uma possível variedade de monstros.
 
 
