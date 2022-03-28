@@ -37,19 +37,19 @@ public class PiglinBrutal implements Listener {
 
         if (entity.getType() == EntityType.PIGLIN) {
             if (random <= chance) {
-                Piglin necromancer = (Piglin) entity;
-                necromancer.setCustomName(ChatColor.DARK_RED + "Piglin Guerreiro");
-                necromancer.setCustomNameVisible(true);
-                Attributable necro = necromancer;
+                Piglin guerreiro = (Piglin) entity;
+                guerreiro.setCustomName(ChatColor.DARK_RED + "Piglin Guerreiro");
+                guerreiro.setCustomNameVisible(true);
+                Attributable piglinguerreiro = guerreiro;
                 AttributeInstance attributeHealth = necro.getAttribute(Attribute.GENERIC_MAX_HEALTH);
                 attributeHealth.setBaseValue(40);
-                necromancer.setHealth(40);
+                guerreiro.setHealth(40);
 
 
-                necromancer.getEquipment().setItemInMainHand(new ItemStack(Material.DIAMOND_AXE));
-                necromancer.getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
-                necromancer.getEquipment().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
-                necromancer.getEquipment().setBoots(new ItemStack(Material.IRON_BOOTS));
+                guerreiro.getEquipment().setItemInMainHand(new ItemStack(Material.DIAMOND_AXE));
+                guerreiro.getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
+                guerreiro.getEquipment().setLeggings(new ItemStack(Material.IRON_LEGGINGS));
+                guerreiro.getEquipment().setBoots(new ItemStack(Material.IRON_BOOTS));
             }
         }
     }
@@ -62,7 +62,6 @@ public class PiglinBrutal implements Listener {
                     if (!player.isBlocking()) {
                         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 180, 2));
                         player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 180, 2));
-                        player.sendMessage(ChatColor.DARK_RED + "Está com medo ?");
                     }
                 }
             }
