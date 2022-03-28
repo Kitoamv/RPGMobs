@@ -150,7 +150,7 @@ public class Reaper implements Listener {
                         }
                         if (chance < 1f) // chance de 100%
                         {
-                            e.setDroppedExp(100);
+                            e.setDroppedExp(50);
                         }
                     }
                 }
