@@ -26,11 +26,13 @@ import java.util.UUID;
 
 public final class RPGMobs extends JavaPlugin {
 
+    // Textos Para o Console do Plugin
     public static Plugin plugin;
     public final String pluginVer = this.getDescription().getVersion();
     public final String system = Bukkit.getServer().getName();
+    public final String collaborators = "";
     public final String author = "&d&lKiritoDzn";
-    public final String prefix = me.rpgmobs.rpgmobs.Utils.chat.translated("&8[&4&lRPG &c&lMobs&8] ");
+    public final String prefix = me.rpgmobs.rpgmobs.Utils.chat.translated("&4&lRPG &c&lMobs ");
 
     public static RPGMobs instance;
 
@@ -81,19 +83,30 @@ public final class RPGMobs extends JavaPlugin {
         this.getCommand("giveminer").setExecutor(new Comandos());
 
 
-        // CONSOLE MSG
+        // MENSAGEM DE INICIAMENTO DO PLUGIN NO CONSOLE
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&b&l-----------------------");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cInfos:");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + " ");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&aPlugin Carregado!");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&7Version: &b " + pluginVer + "&7 &e" + system);
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&4Devolper" + author);
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&b&l-----------------------");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cNome do Plugin: " + prefix );
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cDesenvolvedor: " + author);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cColaboradores: " + collaborators);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&7Version: &b " + pluginVer + "&7 &e" + system);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cSuporte: ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cDiscord: " + "&d&lKiritoDZN#6281");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cDiscord Server: " + "https://discord.gg/zX3AVwcKhQ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&a&lPlugin Iniciado Com Sucesso");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
 
-        // Importação dos Mobs e Sons
-
+        ///////////////////////////////
+        // Importação dos Mobs e Sons//
+        ///////////////////////////////
+        
         // Mobs
         Bukkit.getServer().getPluginManager().registerEvents(new me.rpgmobs.rpgmobs.mobs.Reaper(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new me.rpgmobs.rpgmobs.mobs.Warrior(this), this);
@@ -122,10 +135,17 @@ public final class RPGMobs extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        // MENSAGEM DE DESLIGAMENTO DO PLUGIN NO CONSOLE
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&bAte Breve!");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&cO Plugin Esta Sendo Desligado:");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&dObrigado por usar o Plugin:" + prefix);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&aO Plugin Foi Desligado com Sucesso!");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&dATE BREVE!");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&b&l-----------------------");
     }
 
     @EventHandler
