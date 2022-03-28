@@ -1,4 +1,4 @@
-# RPGMobs
+# RPGMobs [ BETA ]
 Este Plugin Foi Criado para trazer novas Variades para a aventura padrão do Minecraft.
 
 Para Conseguir Programar Este Plugin será necessário ter a API do Minecraft e também do JDK 16
