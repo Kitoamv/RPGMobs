@@ -82,11 +82,12 @@ public class PiglinGravidade implements Listener {
     @EventHandler
     public void onEntityDamage(EntityDamageByEntityEvent event) {
         if (event.getDamager() instanceof Piglin) {
-            if (event.getDamager().getCustomName() != null && event.getDamager().getCustomName().equals(ChatColor.RED + "Piglin Gravitacional"));
-                Player player = (Player) event.getEntity();
+            if (event.getDamager().getCustomName() != null && event.getDamager().getCustomName().equals(ChatColor.RED + "Piglin Gravitacional")) {
                 if (event.getEntity() instanceof Player) {
+                    Player player = (Player) event.getEntity();
                     if (!player.isBlocking()) {
                         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 180, 2));
+                        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 180, 2));
                     }
                 }
             }
