@@ -85,7 +85,7 @@ public class PiglinGravidade implements Listener {
                 Arrow a = (Arrow) e.getDamager();
                     if(!(a.getShooter() instanceof Piglin)) return; //MALDITOS ESQUELETOS.
                     if (a.getShooter().getCustomName() != null && a.getShooter().getCustomName().equals(ChatColor.RED + "Piglin Gravitacional")) {
-                    Player player = (Player) event.getEntity();
+                    Player player = (Player) e.getEntity();
                     if (!player.isBlocking()) {
                         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 180, 2));
                         player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 180, 2));
