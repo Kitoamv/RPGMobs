@@ -17,7 +17,6 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -30,11 +29,8 @@ public final class RPGMobs extends JavaPlugin {
     public static Plugin plugin;
     public final String pluginVer = this.getDescription().getVersion();
     public final String system = Bukkit.getServer().getName();
-    public final String author = "KiritoDzn";
-    public final String prefix = me.rpgmobs.rpgmobs.Utils.chat.translated("&8[&4RPG Mobs&8] ");
-
-    private boolean lore;
-    private ItemStack NuggetMagma;
+    public final String author = "&d&lKiritoDzn";
+    public final String prefix = me.rpgmobs.rpgmobs.Utils.chat.translated("&8[&4&lRPG &c&lMobs&8] ");
 
     public static RPGMobs instance;
 
@@ -76,20 +72,24 @@ public final class RPGMobs extends JavaPlugin {
 
         // Importações de Funcionamentos de Comandos
         createFiles();
-        this.getServer().getPluginManager().registerEvents(new JoinEvent(), this);
+        this.getServer().getPluginManager().registerEvents(new JoinEvent(), this); // ResourcePack Forçado
 
-        this.getServer().getPluginManager().registerEvents(new MeguminTNT(), this);
-        this.getServer().getPluginManager().registerEvents(new TripleShot(), this);
+        this.getServer().getPluginManager().registerEvents(new MeguminTNT(), this); // Funcionamento do Cajado da Megumin
+        this.getServer().getPluginManager().registerEvents(new TripleShot(), this); // Funcionamento do Arco de Ferro
 
         this.getCommand("givemwand").setExecutor(new Comandos());
         this.getCommand("giveminer").setExecutor(new Comandos());
 
 
-        // CMD Plugin Version
+        // CONSOLE MSG
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&b&l-----------------------");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + " ");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&aPlugin Carregado!");
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&7Rodando na versão: &b " + pluginVer + "&7 &e" + system);
-        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&7Criado Por: &5Kirito Dzn");
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&7Version: &b " + pluginVer + "&7 &e" + system);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&4Devolper" + author);
+        me.rpgmobs.rpgmobs.Utils.chat.sendToConsole(prefix + "&b&l-----------------------");
         me.rpgmobs.rpgmobs.Utils.chat.sendToConsole("&r ");
 
         // Importação dos Mobs e Sons
@@ -115,7 +115,10 @@ public final class RPGMobs extends JavaPlugin {
     public final int NecromancerSpawnChance = getConfig().getInt("Necromancer Spawn Chance");
     public final int MinerSpawnChance = getConfig().getInt("Miner Spawn Chance");
     public final int GravidadeSpawnChance = getConfig().getInt("Piglin Gravidade Spawn Chance");
-    public final int PiglinBrutalSpawnChance = getConfig().getInt("Piglin Brutal Spawn Chance");
+    public final int PiglinBrutalSpawnChance = getConfig().getInt("Piglin Guerreiro Spawn Chance");
+
+    // PACOTE DE RECURSOS
+    public final int ResourcePackLink = getConfig().getInt("ResourcePack Link");
 
     @Override
     public void onDisable() {
