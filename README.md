@@ -5,7 +5,7 @@
 
 
 ## Minecraft
-** Minecraft é um jogo de Estilo Sobrevivênvia** Podendo também despertar seu lado criativo.
+**Minecraft é um jogo de Estilo Sobrevivênvia** Podendo também despertar seu lado criativo.
 
 Links: **[Minecraft.Net](https://minecraft.net) [Spigot](https://www.spigotmc.org/) [CraftBukkit](https://getbukkit.org/download/craftbukkit)**
 > Cuidado Com os Creepers, Eles são o tipo de criaturas mais irritantes...
