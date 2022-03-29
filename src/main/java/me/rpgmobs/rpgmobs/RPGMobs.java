@@ -1,5 +1,6 @@
 package me.rpgmobs.rpgmobs;
 
+import me.rpgmobs.rpgmobs.Utils.Cooldown;
 import me.rpgmobs.rpgmobs.Utils.MeguminTNT;
 import me.rpgmobs.rpgmobs.Utils.TripleShot;
 import me.rpgmobs.rpgmobs.Utils.Util;
@@ -74,6 +75,7 @@ public final class RPGMobs extends JavaPlugin {
 
         // Importações de Funcionamentos de Comandos
         createFiles();
+        Cooldown.setupCooldown();
         this.getServer().getPluginManager().registerEvents(new JoinEvent(), this); // ResourcePack Forçado
 
         this.getServer().getPluginManager().registerEvents(new MeguminTNT(), this); // Funcionamento do Cajado da Megumin
