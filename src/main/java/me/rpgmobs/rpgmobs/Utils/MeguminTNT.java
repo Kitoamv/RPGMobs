@@ -30,8 +30,7 @@ public class MeguminTNT implements Listener {
                 tnt.setVelocity(event.getPlayer().getLocation().getDirection().multiply(3));
                 event.setCancelled(true);
                 Cooldown.setCooldown(event.getPlayer(), 5);
-            }
-            else{
+            } else{
                 player.sendMessage(ChatColor.DARK_RED + "A Habilidade ainda não está preparada.");
             }
         }
